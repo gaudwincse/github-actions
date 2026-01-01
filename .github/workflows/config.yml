@@ -8,11 +8,13 @@ jobs:
         run: echo "Build 1"
   build2:
     runs-on: ubuntu-latest
+    needs: build1
     steps:
       - name: Demo build2
         run: echo "Build 2"
   build3:
     runs-on: ubuntu-latest
+    needs: build2
     steps:
       - name: Demo build3
         run: echo "Build 3"
