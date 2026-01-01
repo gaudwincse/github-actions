@@ -5,4 +5,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Demo build1
-        run: echo "Build 1"
+        run: echo "Hello ${{vars.MY_NAME}}"
