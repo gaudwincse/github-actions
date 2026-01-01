@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - main
+      - pr_demo
       - 'release/**'
   pull_request:
     branches:
