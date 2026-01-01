@@ -1,5 +1,12 @@
 name: Hello World
-on: push
+on: 
+  push:
+    branches:
+      - main
+      - 'release/**'
+  pull_request:
+    branches:
+      - main
 jobs:
   build1:
     runs-on: ubuntu-latest
